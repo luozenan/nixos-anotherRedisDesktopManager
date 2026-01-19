@@ -22,7 +22,7 @@ pkgs.appimageTools.wrapAppImage {
   meta = with lib; {
     description = "redis desktop manager";
     homepage = "https://github.com/qishibo/AnotherRedisDesktopManager";
-    license = licenses.MIT;
+    license = licenses.mit;
     platforms = [ "x86_64-linux" ];
   };
 
