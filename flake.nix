@@ -13,8 +13,8 @@
     # 核心：直接用相对路径callPackage（Flake会自动解析根目录）
     packages.${system} = {
       # 相对路径：从Flake根目录（/home/l/nix）指向package.nix
-      anotherRedisDesktopManager = pkgs.callPackage ./pkgs/by-name/an/anotherRedisDesktopManager/package.nix { };
-      default = self.packages.${system}.anotherRedisDesktopManager; # 设为默认包
+      another-redis-desktop-manager = pkgs.callPackage ./pkgs/by-name/an/anotherRedisDesktopManager/package.nix { };
+      default = self.packages.${system}.another-redis-desktop-manager; # 设为默认包
     };
   };
 }
