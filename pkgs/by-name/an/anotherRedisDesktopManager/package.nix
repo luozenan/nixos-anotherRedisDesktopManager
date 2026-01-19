@@ -7,7 +7,7 @@ let
 
   src = fetchurl {
           url = "https://github.com/qishibo/AnotherRedisDesktopManager/releases/download/v1.7.1/Another-Redis-Desktop-Manager-linux-1.7.1-x86_64.AppImage";
-          hash = "sha256-0jvx3pvjw90mcqgh8y0mmm1c1pd25g8s03qyxv92dlaxgrg32xal";
+          hash = lib.fakeSha256;
         };
 
   appimageContents = pkgs.appimageTools.extract {
