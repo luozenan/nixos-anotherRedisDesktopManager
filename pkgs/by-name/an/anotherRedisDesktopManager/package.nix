@@ -1,5 +1,5 @@
 # pkgs/by-name/ap/apifox/package.nix（完全对齐微信写法）
-{ pkgs, lib, ... }:
+{ pkgs, lib, fetchurl, ... }:
 
 let
   pname = "anotherRedisDesktopManager";
