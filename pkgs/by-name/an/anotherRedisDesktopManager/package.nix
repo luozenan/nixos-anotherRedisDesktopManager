@@ -2,7 +2,7 @@
 { pkgs, lib, fetchurl, ... }:
 
 let
-  pname = "anotherRedisDesktopManager";
+  pname = "another-redis-desktop-manager";
   version = "1.7.1";
 
 src = fetchurl {
@@ -15,7 +15,7 @@ src = fetchurl {
     inherit pname version src;
     # 可选：修复依赖（参考微信的patchelf操作）
     postExtract = ''
-      patchelf --replace-needed libxshmfence.so.1 $out/opt/apifox/apifox || true
+      patchelf --replace-needed libxshmfence.so.1 $out/opt/another-redis-desktop-manager/another-redis-desktop-manager || true
     '';
   };
 
