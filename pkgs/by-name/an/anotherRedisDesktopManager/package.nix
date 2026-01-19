@@ -13,6 +13,10 @@ src = fetchurl {
 
   appimageContents = pkgs.appimageTools.extract {
     inherit pname version src;
+    # 可选：修复依赖（参考微信的patchelf操作）
+    postExtract = ''
+      patchelf --replace-needed libxshmfence.so.1 $out/opt/apifox/apifox || true
+    '';
   };
 
 in
