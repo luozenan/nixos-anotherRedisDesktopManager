@@ -8,7 +8,8 @@ let
 src = fetchurl {
   url = "https://github.com/qishibo/AnotherRedisDesktopManager/releases/download/v1.7.1/Another-Redis-Desktop-Manager-linux-1.7.1-x86_64.AppImage";
   # 替换为真实的sha256 hash（带sha256-前缀）
-  hash = "sha256-1n89y09z8x7w6v5u4t3s2r1e0w9q8p7o6i5u4y3x2w1q0a9s8d7f6g5h4j3k2l1m0n9b8v7c6x5s4d3f2g1h0j9k8l7m6n5b4v3c2x1s0d9f8g7h6j5k4l3m2n1b0v9c8x7s6d5f4g3h2j1k0l9m8n7b6v5c4x3s2d1f0g9h8j7k6l5m4n3b2v1c0x9s8d7f6g5h4j3k2l1m0=";
+  hash = "sha256-0m64isixgv6yx7h69x81nq97lx732dvvcdj1c7l9llp1qs7bir2y";
+";
 };
 
   appimageContents = pkgs.appimageTools.extract {
