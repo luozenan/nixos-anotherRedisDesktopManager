@@ -8,7 +8,7 @@ flake inputs:
 ###
  anotherRedisDesktopManager-github = {
  
-    url = "github:luozenan/nixos-electerm";
+    url = "github:luozenan/nixos-anotherRedisDesktopManager";
     
     inputs.nixpkgs.follows = "nixpkgs";
   }; 
