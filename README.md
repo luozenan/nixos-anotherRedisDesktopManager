@@ -1,3 +1,5 @@
+官方网站：https://goanother.com/cn/
+
 nixos-anotherRedisDesktopManager
 
 electerm for nixos
